@@ -26,18 +26,18 @@ class ellipse(shapes):
         master = Tk()
         master.title("Shapes")
         canvas = Canvas(master)
-        canvas.create_oval(110, 10, 210, 80, outline = "red", width = 2)
+        canvas.create_oval(130, 30, 230, 100, outline = "red", width = 2)
         canvas.pack(fill = BOTH, expand = 1)
         mainloop()
         pass
 
     def area(self, ):
-        print("Area Of Ellipse : {0}".format(math.pi * self.radius1 * self.radius2))
+        print("Area Of Ellipse is {0}".format(math.pi * self.radius1 * self.radius2))
         pass
 
     def perimeter(self):
         perimeter_ellipse = math.pi * (3 * (self.radius1 + self.radius2) - math.sqrt((3 * self.radius1 + self.radius2) * (self.radius1 + 3 * self.radius2)))
-        print("Approximiate Perimeter Of Ellipse : {0}".format(perimeter_ellipse))
+        print("Approximiate Perimeter Of Ellipse is {0}".format(perimeter_ellipse))
         pass
 
 class circle(shapes):
@@ -49,17 +49,17 @@ class circle(shapes):
         master = Tk()
         master.title("Shapes")
         canvas = Canvas(master)
-        canvas.create_oval(10, 10, 80, 80, outline = "black", width = 2)
+        canvas.create_oval(20, 20, 90, 90, outline = "black", width = 4)
         canvas.pack(fill = BOTH, expand = 1)
         mainloop()
         pass
 
     def area(self):
-        print("Area Of Circle : {0}".format(math.pi * self.radius * self.radius))
+        print("Area Of Circle is {0}".format(math.pi * self.radius * self.radius))
         pass
 
     def perimeter(self):
-        print("Perimeter Of Circle : {0}".format(2 * math.pi * self.radius))
+        print("Perimeter Of Circle is {0}".format(2 * math.pi * self.radius))
         pass
 
 class rectangle(shapes):
@@ -72,17 +72,17 @@ class rectangle(shapes):
         master = Tk()
         master.title("Shapes")
         canvas = Canvas(master)
-        canvas.create_rectangle(230, 10, 310, 60, outline = "black", width = 2)
+        canvas.create_rectangle(230, 10, 310, 60, outline = "red", width = 4)
         canvas.pack(fill = BOTH, expand = 1)
         mainloop()
         pass
 
     def area(self):
-        print("Area Of Rectangle : {0}".format(self.length * self.width))
+        print("Area Of Rectangle is {0}".format(self.length * self.width))
         pass
 
     def perimeter(self):
-        print("Perimeter Of Rectangle : {0}".format(2 * (self.length * self.width)))
+        print("Perimeter Of Rectangle is {0}".format(2 * (self.length * self.width)))
         pass
 
 class triangle(shapes):
@@ -95,17 +95,17 @@ class triangle(shapes):
         master = Tk()
         master.title("Shapes")
         canvas = Canvas(master)
-        canvas.create_polygon((0, 100, 50, 0, 100, 100))
+        canvas.create_polygon((50, 150, 100, 50, 150, 150))
         canvas.pack(fill = BOTH, expand = 1)
         mainloop()
         pass
 
     def area(self):
-        print("Area Of Triangle : {0}".format((self.base * self.height) / 2))
+        print("Area Of Triangle is {0}".format((self.base * self.height) / 2))
         pass
 
     def perimeter(self, side1, side2, side3):
-        print("Perimeter Of Triangle : {0}".format(side1 + side2 + side3))
+        print("Perimeter Of Triangle is {0}".format(side1 + side2 + side3))
         pass
 
 class square(shapes):
@@ -117,41 +117,41 @@ class square(shapes):
         master = Tk()
         master.title("Shapes")
         canvas = Canvas(master)
-        canvas.create_rectangle(230, 10, 290, 70, outline = "black", width = 2)
+        canvas.create_rectangle(250, 30, 310, 90, outline = "black", width = 4)
         canvas.pack(fill = BOTH, expand = 1)
         mainloop()
         pass
 
     def area(self):
-        print("Area Of Square : {0}".format(self.side * self.side))
+        print("Area Of Square is {0}".format(self.side * self.side))
         pass
 
     def perimeter(self):
-        print("Perimeter Of Square : {0}".format(4 * self.side))
+        print("Perimeter Of Square is {0}".format(4 * self.side))
         pass
 
-e = ellipse(10, 10)
-e.area()
-e.perimeter()
-e.draw()
-
-c = circle(10)
-c.area()
-c.perimeter()
-c.draw()
-
-r = rectangle(10, 10)
-r.area()
-r.perimeter()
-r.draw()
 
 t = triangle(10, 10)
 t.area()
 t.perimeter(10, 20, 30)
 t.draw()
 
-s = square(10)
+r = rectangle(50, 50)
+r.area()
+r.perimeter()
+r.draw()
+
+c = circle(5)
+c.area()
+c.perimeter()
+c.draw()
+
+s = square(5)
 s.area()
 s.perimeter()
 s.draw()
 
+e = ellipse(60, 60)
+e.area()
+e.perimeter()
+e.draw()

@@ -22,7 +22,7 @@ class Kangaroo(Animals):
         Animals.info(self, self.name)
         
     def speak(self):
-        print("Kangaroo's Growl!!\n")
+        print("Dog Barks!!\n")
 
 class Lion(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -33,7 +33,7 @@ class Lion(Animals):
         Animals.info(self, self.name)
 
     def speak(self):
-        print("Lions's Roar!!\n")
+        print("cat meow!!\n")
 
 class Dog(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -44,7 +44,7 @@ class Dog(Animals):
         Animals.info(self, self.name)
 
     def speak(self):
-        print("Dog's bark!!\n")
+        print("Horse Neigh!!\n")
         
 class Cat(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -55,7 +55,7 @@ class Cat(Animals):
         Animals.info(self, self.name)
         
     def speak(self):
-        print("Cat's Meow!!\n")
+        print("Rabbit Grunt!!\n")
 
 class Monkey(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -66,7 +66,7 @@ class Monkey(Animals):
         Animals.info(self, self.name)
         
     def speak(self):
-        print("Monkey's Chatter!!\n")
+        print("Cow Moo!!\n")
 
 class Horse(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -77,7 +77,7 @@ class Horse(Animals):
         Animals.info(self, self.name)
 
     def speak(self):
-        print("Horse's Neigh!!\n")
+        print("Tiger Growl!!\n")
 
 class Cow(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -88,7 +88,7 @@ class Cow(Animals):
         Animals.info(self, self.name)
         
     def speak(self):
-        print("Cow's Moo!!\n")
+        print("Elephant Trumpets\n")
 
 class Duck(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -99,7 +99,7 @@ class Duck(Animals):
         Animals.info(self, self.name)
         
     def speak(self):
-        print("Duck's Quack!!\n")
+        print("Lion Roar!\n")
 
 class Goat(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -110,7 +110,7 @@ class Goat(Animals):
         Animals.info(self, self.name)
         
     def speak(self):
-        print("Goats's Baa!!\n")
+        print("Wolf Howl!!\n")
 
 class Peacock(Animals):
     def __init__(self, name, legs, eyes, ears):
@@ -121,44 +121,44 @@ class Peacock(Animals):
         Animals.info(self, self.name)
         
     def speak(self):
-        print("Peacock's Scream!!\n")
+        print("Deer Grunt\n")
         
-kangaroo = Kangaroo("Kangaroo",5,2,2)
+kangaroo = Kangaroo("Dog",5,2,2)
 kangaroo.info()
 kangaroo.speak()
 
-goat = Goat("Goat",4,2,2)
+goat = Goat("Cat",4,2,2)
 goat.info()
 goat.speak()
 
-dog = Dog("Dog",4,2,2)
+dog = Dog("Horse",4,2,2)
 dog.info()
 dog.speak()
 
-cat = Cat("Cat",4,2,2)
+cat = Cat("Rabbit",4,2,2)
 cat.info()
 cat.speak()
 
-lion = Lion("Lion",4,2,2)
+lion = Lion("Cow",4,2,2)
 lion.info()
 lion.speak()
 
-monkey = Monkey("Monkey",2,2,2)
+monkey = Monkey("Tiger",2,2,2)
 monkey.info()
 monkey.speak()
 
-horse = Horse("Horse",4,2,2)
+horse = Horse("Lion",4,2,2)
 horse.info()
 horse.speak()
 
-cow = Cow("Cow",4,2,2)
+cow = Cow("Elephant",4,2,2)
 cow.info()
 cow.speak()
 
-duck = Duck("Duck",2,2,2)
+duck = Duck("Wolf",2,2,2)
 duck.info()
 duck.speak()
 
-peacock = Peacock("Peacock",4,2,2)
+peacock = Peacock("Deer",4,2,2)
 peacock.info()
 peacock.speak()
